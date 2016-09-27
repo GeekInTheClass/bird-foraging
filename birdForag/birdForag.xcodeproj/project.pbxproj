@@ -23,7 +23,7 @@
 		72F540EB1D9A186700FBBC33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F540EE1D9A186700FBBC33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F540F01D9A186700FBBC33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72F540F61D9A187600FBBC33 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		72F540F61D9A187600FBBC33 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,6 @@
 		72F540D81D9A186700FBBC33 = {
 			isa = PBXGroup;
 			children = (
-				72F540F61D9A187600FBBC33 /* File.swift */,
 				72F540E31D9A186700FBBC33 /* birdForag */,
 				72F540E21D9A186700FBBC33 /* Products */,
 			);
@@ -58,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				72F540E41D9A186700FBBC33 /* AppDelegate.swift */,
+				72F540F61D9A187600FBBC33 /* File.swift */,
 				72F540E61D9A186700FBBC33 /* ViewController.swift */,
 				72F540E81D9A186700FBBC33 /* Main.storyboard */,
 				72F540EB1D9A186700FBBC33 /* Assets.xcassets */,
@@ -292,6 +292,7 @@
 				72F540F51D9A186700FBBC33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

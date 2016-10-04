@@ -125,7 +125,7 @@ class Text {
 /*func assignToBody(text: Text, body: Dictionary<ForageCategory,[Text]>) -> Dictionary<ForageCategory, [Text]> {
     var bunch = body
     if var a = bunch[text.category] {
-        a += [text]
+        bunch[text.category] += [text]
         return bunch
     }
     bunch[text.category] = [text]

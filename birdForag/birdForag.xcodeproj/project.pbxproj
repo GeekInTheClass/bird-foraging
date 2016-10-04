@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E7BCD7B1DA33D29006F8212 /* BirdTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7BCD7A1DA33D29006F8212 /* BirdTableViewController.swift */; };
 		72F540E51D9A186700FBBC33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F540E41D9A186700FBBC33 /* AppDelegate.swift */; };
 		72F540E71D9A186700FBBC33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F540E61D9A186700FBBC33 /* ViewController.swift */; };
 		72F540EA1D9A186700FBBC33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F540E81D9A186700FBBC33 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E7BCD7A1DA33D29006F8212 /* BirdTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdTableViewController.swift; sourceTree = "<group>"; };
 		72F540E11D9A186700FBBC33 /* birdForag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = birdForag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F540E41D9A186700FBBC33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F540E61D9A186700FBBC33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				72F540E41D9A186700FBBC33 /* AppDelegate.swift */,
 				72F540F61D9A187600FBBC33 /* File.swift */,
+				6E7BCD7A1DA33D29006F8212 /* BirdTableViewController.swift */,
 				72F540E61D9A186700FBBC33 /* ViewController.swift */,
 				72F540E81D9A186700FBBC33 /* Main.storyboard */,
 				72F540EB1D9A186700FBBC33 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7BCD7B1DA33D29006F8212 /* BirdTableViewController.swift in Sources */,
 				72F540E71D9A186700FBBC33 /* ViewController.swift in Sources */,
 				72F540F71D9A187600FBBC33 /* File.swift in Sources */,
 				72F540E51D9A186700FBBC33 /* AppDelegate.swift in Sources */,

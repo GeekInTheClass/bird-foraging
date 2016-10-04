@@ -122,7 +122,7 @@ class Text {
 
 //function
 
-func assignToBody(text: Text, body: Dictionary<ForageCategory,[Text]>) -> Dictionary<ForageCategory, [Text]> {
+/*func assignToBody(text: Text, body: Dictionary<ForageCategory,[Text]>) -> Dictionary<ForageCategory, [Text]> {
     var bunch = body
     if var a = bunch[text.category] {
         a += [text]
@@ -131,11 +131,12 @@ func assignToBody(text: Text, body: Dictionary<ForageCategory,[Text]>) -> Dictio
     bunch[text.category] = [text]
     return bunch
 }
+ */
 
 
 
-func createDummy() -> Dictionary<ForageCategory,[Text]> {
-    
+//func createDummy() -> Dictionary<ForageCategory,[Text]> {
+func createDummy() -> [Text] {
     
     
     var body:Dictionary<ForageCategory,[Text]> = [:]
@@ -170,9 +171,9 @@ func createDummy() -> Dictionary<ForageCategory,[Text]> {
     
     
     
-    body = assignToBody(text: Text1, body: body)
+    //body = assignToBody(text: Text1, body: body)
     
-    
+    body[.behavioral] = [Text1]
     
     let coopershawk = Bird("쿠퍼매")
     
@@ -187,9 +188,9 @@ func createDummy() -> Dictionary<ForageCategory,[Text]> {
     
     Text2.text = "매과 새들은 자신과 비슷한 몸 크기의 먹이를 잡았을 때, 근처의 물에 담궈서 익사시켜 먹는 행동을 보이곤 한다. 먹이감의 숨을 끊어놓고 포식을 하는 다른 맹수들과 달리, 맹금들은 뼈를 부수는 경우가 아니고서는 주로 단단한 발톱으로 먹이를 쥐고 산채로 뜯어먹는다. 이때, 살아있는 먹이감들은 어떻게든 포식자의 발톱에서 벗어나려고 발버둥을 친다. 먹이감의 크기가 작다면 숨이 멎을 때까지 발톱에 쥐고 기다리거나 먹이감이 벗어나려고 해도 아랑곳하지 않고 뜯어먹을 수 있다. 하지만 먹이감의 크기가 맹금과 비슷하거나 맹금보다 클 때는 다르다. 먹이감의 힘이 맹금과 비슷하기 때문에 도망갈 확률이 높다. 따라서 일부 매과는 물가에 있을 때 자신의 먹이감을 물에 넣어 수장시키고 편안한 식사를 즐긴다."
     
-    body = assignToBody(text: Text2, body: body)
+    //body = assignToBody(text: Text2, body: body)
     
-    
+    body[.behavioral]! += [Text2]
     
     
     
@@ -207,9 +208,9 @@ func createDummy() -> Dictionary<ForageCategory,[Text]> {
     
     Text3.text = "견과류를 먹는 어떤 새들은 견과류의 무게를 재는 행동을 보인다. 멕시코 어치도 그 일종인데, 최근 연구에 따르면 이들은 견과류를 흔들어서 나는 소리로 무게를 판단한다고 한다. 멕시코 어치는 우선 부리에 견과류를 물고, 부리를 열었다 닫았다를 반복하여 견과류가 흔들리면서 그 안에서 나는 소리를 듣는다. 이러한 행동은 멕시코 어치가 제일 품질이 좋은 견과류를 선택하도록 해 생존에 이점을 준다."
     
-    body = assignToBody(text: Text3, body: body)
+    //body = assignToBody(text: Text3, body: body)
     
-    
+    body[.behavioral]! += [Text3]
     
     
     let barnOwl = Bird("원숭이올빼미")
@@ -225,9 +226,9 @@ func createDummy() -> Dictionary<ForageCategory,[Text]> {
     
     Text4.text = "올빼미류 새들은 소리 없는 비행을 하기로 유명하다. 다른 새들이 날개짓을 할 때 퍼덕이는 소리가 나는 것과는 다르게 올빼류의 비행은 아무런 소리도 나지 않는다. 이는 올빼미류 새들이 먹이감이 눈치채지 못하게 빠르게 습격하는 데 유용하다. 올빼미류의 소리 없는 비행은 그 깃털과 털에 비밀이 숨어있다. 우선 올빼미류의 날개깃은 그 가장자리가 다른 새들과 다르게 유연한 술처럼 되어있어서 공기의 흐름을 아주 미세한 소용돌이로 쪼갠다. 그리고 이러한 미세한 소용돌이는 올빼미류의 다른 깃털들을 지나며 더 쪼개져서 소리가 거의 나지 않도록 한다. 또한 남아있는 소리는 올빼미류의 다리와 날개 안쪽의 부드러운 솜털에 의해 흡수된다."
     
-    body = assignToBody(text: Text4, body: body)
+    //body = assignToBody(text: Text4, body: body)
     
-    
+    body[.histological] = [Text4]
     
     
     
@@ -247,19 +248,19 @@ func createDummy() -> Dictionary<ForageCategory,[Text]> {
     
     Text5.text = "포유류와 같이, 몇몇 새들은 새끼에게 부모의 분비물을 먹인다. 하지만, 포유류와는 다르게 암컷뿐만 아니라 수컷역시 이를 만들수 있다. 비둘기의 경우 이 분비물을 crop milk라 부른다. crop은 식도의 밑에 존재하는데, 새들이 일시적으로 음식물을 저장해두는 용도의 기관이다. crop milk는 이 crop이라는 기관의 벽에 있는 세포들로 이루어진다. 알이 부화하기 며칠 전이 되면, crop의 벽에 붙은 세포들이 왕성하게 분열하고, 벽에서 떨어져서 고단백질, 고지방의 혼합물을 만든다. crop milk에는 이뿐만 아니라 면역력 증진 물질과 항체(IgA), 항산화제 등이 포함되어 있다. 한편 crop milk가 생성되기 시작하면 부모 새들은 새끼 새들이 소화시키지 못할 이물질이 들어가는 것을 방지하기 위해 먹이 섭취를 중단한다. 이러한 crop milk의 생성과 금식은 호르몬의 분비와 관련되어 있다고 알려져있다. 외형에 있어서는, crop milk는 그 이름과 다르게 반 고체의 치즈와 같은 모양이다. 비둘기 외에도 플라밍고의 소화관, 펭귄의 식도에서도 새끼에게 먹이기 위한 분비물이 생성된다."
     
-    body = assignToBody(text: Text5, body: body)
+    //body = assignToBody(text: Text5, body: body)
+    
+    
+    body[.histological]! += [Text5]
     
     
     
     
     
+    let result = body[.behavioral]! + body[.histological]!
     
     
-    
-    
-    
-    
-    return body
+    return result
     
     
     

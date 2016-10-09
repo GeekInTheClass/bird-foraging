@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>birdForag.xcscheme</key>
+		<key>dummy.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>72F540E01D9A186700FBBC33</key>
+		<key>6E1DD23F1DA28543007775F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

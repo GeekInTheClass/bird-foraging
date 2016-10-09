@@ -1,15 +1,16 @@
 //
 //  BirdTableViewController.swift
-//  birdForag
+//  dummy
 //
-//  Created by JKim on 2016. 10. 4..
-//  Copyright © 2016년 itct07. All rights reserved.
+//  Created by JKim on 2016. 10. 9..
+//  Copyright © 2016년 JKim. All rights reserved.
 //
 
 import UIKit
 
 class BirdTableViewController: UITableViewController {
-    var birds = createDummy()
+    
+    let data = Array(createDummy())
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,8 @@ class BirdTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    self.navigationItem.title = "Bird facts"
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,23 +33,23 @@ class BirdTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return data.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return birds.count
+        
+        return data[section].1.count
     }
 
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        
         // Configure the cell...
+        let repres = data[indexPath.section].value[indexPath.row]
+        cell.textLabel!.text = repres.title
         
-        let bird = birds[indexPath.row]
-        
-        cell.textLabel!.text = bird.title
         
         return cell
     }
@@ -87,14 +90,20 @@ class BirdTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+    if segue.identifier == "ShowDetail"{
+        guard let destination = segue.destination as? ViewController, let selectedIndex = self.tableView.indexPathForSelectedRow  else {return}
+        let instance = data[selectedIndex.section].1[selectedIndex.row]
+        destination.bird = instance
+    
     }
-    */
+    
 
-}
+    }}
+

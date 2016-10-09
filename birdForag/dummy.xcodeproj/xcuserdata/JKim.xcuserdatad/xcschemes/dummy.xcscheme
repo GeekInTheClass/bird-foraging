@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72F540E01D9A186700FBBC33"
-               BuildableName = "birdForag.app"
-               BlueprintName = "birdForag"
-               ReferencedContainer = "container:birdForag.xcodeproj">
+               BlueprintIdentifier = "6E1DD23F1DA28543007775F3"
+               BuildableName = "dummy.app"
+               BlueprintName = "dummy"
+               ReferencedContainer = "container:dummy.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72F540E01D9A186700FBBC33"
-            BuildableName = "birdForag.app"
-            BlueprintName = "birdForag"
-            ReferencedContainer = "container:birdForag.xcodeproj">
+            BlueprintIdentifier = "6E1DD23F1DA28543007775F3"
+            BuildableName = "dummy.app"
+            BlueprintName = "dummy"
+            ReferencedContainer = "container:dummy.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72F540E01D9A186700FBBC33"
-            BuildableName = "birdForag.app"
-            BlueprintName = "birdForag"
-            ReferencedContainer = "container:birdForag.xcodeproj">
+            BlueprintIdentifier = "6E1DD23F1DA28543007775F3"
+            BuildableName = "dummy.app"
+            BlueprintName = "dummy"
+            ReferencedContainer = "container:dummy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72F540E01D9A186700FBBC33"
-            BuildableName = "birdForag.app"
-            BlueprintName = "birdForag"
-            ReferencedContainer = "container:birdForag.xcodeproj">
+            BlueprintIdentifier = "6E1DD23F1DA28543007775F3"
+            BuildableName = "dummy.app"
+            BlueprintName = "dummy"
+            ReferencedContainer = "container:dummy.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
